@@ -3,7 +3,3 @@ openai
 whisper
 ffmpeg-python
 python-dotenv
-smtplib
-python-dotenv
-whisper
-ffmpeg
