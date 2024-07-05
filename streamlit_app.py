@@ -78,6 +78,8 @@ if video_file:
         st.text_area("Summary and Plan of Action", summary_and_plan, height=200)
     except openai.error.OpenAIError as e:
         st.error(f"OpenAI API error: {e}")
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
 
     if not EMAIL_ADDRESS or not EMAIL_PASSWORD:
         st.error("Sender's email credentials not configured. Please check the environment variables.")
